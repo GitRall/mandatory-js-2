@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif;
+}
+main{
+  background-color: #fff2fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.square-container{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 0 5px 0 gray;
+}
+.square{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 33%;
+  height: calc(100% / 3);
+  border: 1px solid lightgray;
+  background-color: #f8e2ff;
+  cursor: pointer;
+}
+.square:hover{
+  background-color: #ffd9fb;
+}
+.cross-icon{
+  font-size: 150px;
+  color: #ff5643;
+}
+.circle-icon{
+  font-size: 150px;
+  color: blue;
+}
+.crown-icon{
+  margin-left: 15px;
+  color: orange;
+}
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 200px;
+  margin-left: 20px;
+  background-color: #f8e2ff;
+  box-shadow: 0 0 5px 0 gray;
+}
+button{
+  width: 70%;
+  height: 40px;
+  margin: 10px 0 10px 0;
+  background-color: #ffd9fb;
+  border: 1px solid #cfb0c9;
+  box-shadow: 1px 1px 1px 0 #cfb0c9;
+  color: #7a6876;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #f7d2f0;
+}
+.player-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 100%;
+  color: #7a6876;
+}
