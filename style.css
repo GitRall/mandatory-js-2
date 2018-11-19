@@ -36,9 +36,21 @@ main{
   font-size: 150px;
   color: #ff5643;
 }
+.cross-icon-small{
+  font-size: 30px;
+  color: #ff5643;
+  margin-right: 10px;
+  margin-left: 20px;
+}
 .circle-icon{
   font-size: 150px;
-  color: blue;
+  color: #564dff;
+}
+.circle-icon-small{
+  font-size: 25px;
+  color: #564dff;
+  margin-right: 10px;
+  margin-left: 15px;
 }
 .crown-icon{
   margin-left: 15px;
@@ -60,7 +72,7 @@ button{
   margin: 10px 0 10px 0;
   background-color: #ffd9fb;
   border: 1px solid #cfb0c9;
-  box-shadow: 1px 1px 1px 0 #cfb0c9;
+  box-shadow: 0 0 1px 1px #cfb0c9;
   color: #7a6876;
   font-size: 20px;
   cursor: pointer;
@@ -75,9 +87,12 @@ button:hover{
   margin-top: 20px;
   width: 100%;
 }
+.icon-holder{
+  width: 20%;
+}
 h2{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 10px;
   height: 50px;
