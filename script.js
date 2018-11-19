@@ -15,8 +15,7 @@ let aiInterval;
 function clickSquare(e){
   /* --- player 1 clicks square (player vs player) --- */
   if(playerOneCount === playerTwoCount && $(e.target).attr('data-check') === '0' && vsPlayer === true){
-    let crossIcon = $('<i class="fas fa-times cross-icon"></i>');
-    crossIcon.appendTo($(e.target));
+    $(e.target).append('<i class="fas fa-times cross-icon"></i>');
     playerOneCount++;
     $(e.target).attr('data-check', '1');
     $('h2')[0].style = 'background-color: none;';
@@ -26,8 +25,7 @@ function clickSquare(e){
   }
   /* --- player 2 clicks square (player vs player) --- */
   if(playerOneCount > playerTwoCount && $(e.target).attr('data-check') === '0' && vsPlayer === true){
-    let circleIcon = $('<i class="far fa-circle circle-icon"></i>');
-    circleIcon.appendTo($(e.target));
+    $(e.target).append('<i class="far fa-circle circle-icon"></i>');
     playerTwoCount++;
     $(e.target).attr('data-check', '2');
     $('h2')[1].style = 'background-color: none;';
@@ -37,8 +35,7 @@ function clickSquare(e){
   }
   /* --- player 1 clicks square (player vs AI)*/
   if(playerOneCount === aiCount && $(e.target).attr('data-check') === '0' && vsAi === true){
-    let crossIcon = $('<i class="fas fa-times cross-icon"></i>');
-    crossIcon.appendTo($(e.target));
+    $(e.target).append('<i class="fas fa-times cross-icon"></i>');
     playerOneCount++;
     $(e.target).attr('data-check', '1');
     $('h2')[0].style = 'background-color: none;';
